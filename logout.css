@@ -1,0 +1,28 @@
+/* logout.css */
+.logout-container {
+    position: absolute; /* Memungkinkan positioning di luar aliran normal dokumen */
+    top: 20px; /* Jarak dari tepi atas layar */
+    left: 20px; /* Jarak dari tepi kiri layar */
+}
+
+.logout-container form {
+    margin: 0; /* Menghapus margin default form */
+}
+
+.logout-container input[type="submit"] {
+    background-color: #f44336; /* Warna latar belakang merah */
+    color: white; /* Warna teks putih */
+    border: none; /* Menghapus border default */
+    padding: 5px 10px; /* Spasi di sekitar teks */
+    text-align: center; /* Teks di tengah */
+    text-decoration: none; /* Menghapus garis bawah */
+    display: inline-block; /* Mengatur elemen inline-block */
+    font-size: 10px; /* Ukuran font */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    border-radius: 4px; /* Sudut membulat */
+}
+
+.logout-container input[type="submit"]:hover {
+    background-color: #d32f2f; /* Warna latar belakang saat hover */
+}

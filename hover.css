@@ -1,0 +1,62 @@
+/* Kontainer untuk gambar */
+.cover-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Gambar sampul buku */
+.cover-image {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer; /* Tambahkan cursor pointer agar terlihat klikabel */
+}
+
+/* Efek saat hover */
+.cover-container:hover .cover-image {
+    opacity: 0.8; /* Mengurangi opacity sedikit saat hover */
+    transform: scale(1.05); /* Membesarkan gambar sedikit saat hover */
+}
+
+/* Form detail buku */
+.detail-form {
+    display: none;
+    position: absolute;
+    top: -150px; /* Menyesuaikan posisi form sedikit ke atas */
+    left: 100%; /* Posisi form di samping gambar */
+    transform: translate(10px, 0); /* Menambahkan jarak horizontal dari gambar */
+    width: 350px;
+    max-width: 90vw; /* Tambahkan responsivitas dengan batas lebar maksimal */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Meningkatkan z-index untuk memastikan form tidak tertutup elemen lain */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Pastikan padding dan border dihitung dalam lebar total */
+}
+
+/* Tampilkan form saat hover */
+.cover-container:hover .detail-form {
+    display: block;
+}
+
+/* Styling form detail */
+.detail-form img {
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+.detail-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.detail-form input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    cursor: default;
+}
